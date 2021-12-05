@@ -1,0 +1,28 @@
+.customapp {
+  /* border: 2px solid red; */
+  margin: 20px;
+  width:500px;
+  margin-left: auto;
+    margin-right: auto;
+}
+.taskdiv {
+    /* margin-left: auto;
+    margin-right: auto;
+    width:500px; */
+    border:2px solid black;
+    border-radius: 25px;;
+}
+.roundBtn {
+  border-radius: 50%;
+  width:50px;
+  height:50px;
+}
+
+.btmDiv {
+  width: inherit;
+  position: absolute;
+  bottom: 0px;
+}
+.modaldiv {
+  height: 60%;
+}
