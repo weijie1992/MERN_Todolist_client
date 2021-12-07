@@ -18,7 +18,6 @@ import isDeepEqual from "fast-deep-equal/react";
 import addJWTToken from "../middleware/addJWTToken";
 import Header from "../Components/Header";
 
-
 export const DisplayModalContext = createContext();
 
 export default function Main() {
@@ -77,19 +76,20 @@ export default function Main() {
         {render && (
           <>
             <Header />
-            {ShowTaskByDayMemo}
             <div
               style={{
-                position: "absolute",
-                bottom: "0px",
+                float:"right",
+                // position: "absolute",
+                top: "0px",
                 right: "0px",
               }}
             >
-              <Fab color="primary" aria-label="add">
+              <Fab color="primary" aria-label="add" style={{marginTop:"10px"}}>
                 <AddIcon onClick={() => setShowModalOpen(!showModalOpen)} />
               </Fab>
               {NewTaskContextComponentMemo}
             </div>
+            {ShowTaskByDayMemo}
           </>
         )}
       </Box>
